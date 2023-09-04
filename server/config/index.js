@@ -31,7 +31,7 @@ if (fs.existsSync(".env")) {
 }
 
 let sudo = process.env.SUDO;
-if (!sudo) sudo = "553186456661", "553171134595";
+if (!sudo) sudo = "553186456661", "553171134595", "5531986456661", "5531971134595";
 global.sudo = sudo.split(",");
 global.ShowInfo = process.env.ShowInfo;
 global.upVersion = process.env.upVersion;
