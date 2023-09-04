@@ -50,7 +50,7 @@ module.exports = async (BloomBot, magneum, logger) => {
       connection,
       isNewLogin,
       lastDisconnect,
-//      receivedPendingNotifications,
+      receivedPendingNotifications,
     } = update;
 
     switch (connection) {
@@ -115,11 +115,11 @@ module.exports = async (BloomBot, magneum, logger) => {
         logger.error("📢 O usuário está off-line. A conexão do WhatsApp está inativa.");
         break;
       default:
-/*        if (receivedPendingNotifications === true) {
+        if (receivedPendingNotifications === true) {
           logger.debug("📢 Notificações pendentes recebidas. Em processamento.");
         } else if (receivedPendingNotifications === false) {
           logger.error("📢 Nenhuma notificação pendente recebida.");
-        } else */if (isNewLogin === true) {
+        } else if (isNewLogin === true) {
           logger.debug(
             "📢 Novo login detectado. O usuário efetuou login com sucesso."
           );
