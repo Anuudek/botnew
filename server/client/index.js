@@ -130,7 +130,7 @@ async function magneum() {
     defaultQueryTimeoutMs: undefined,
 //    browser: Browsers.macOS("Desktop"),
     generateHighQualityLinkPreview: true,
-    browser: ["botAnuudek", "Chrome", "1.0.0"],
+    browser: ["botAnuudek", "Chrome", "4.0.0"],
     getMessage: async (key) => {
       if (store) {
         const msg = await store.loadMessage(key.remoteJid, key.id, undefined);
